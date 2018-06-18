@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roadmap</title>
+    <script src="js/vue.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <li v-for="course in courses" :key="course.name" v-html="course.name">{{course.name}}</li>
+    </div>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            courses: [
+                {name: '<h2>✔️ DONE </h2>'},
+                {name: '⭐JavaScript - The Hard Parts'},
+                {name: '⭐Four Semesters of Computer Science in 6 Hours'},
+                {name: '⭐JavaScript Interview Questions'},
+                {name: '⭐Object Oriented Programming in JavaScript'},
+                {name: '⭐The Complete MySQL Bootcamp by Colt Steele'},
+                {name: '<h2>🦄 PENDING 🦄</h2>'},
+                {name: '<h3>=== JAVASCRIPT ===</h3>'},
+                {name:'💻JavaScript: From Fundamentals to Functional JS, v2 - Bianca Gandolfo'},
+                {name:'💻Deep JavaScript Foundations - Kyle Simpson'},
+                {name:'❓ES6 The Right Parts - Kyle Simpson'},
+                {name:'❓The Good Parts of JavaScript and the Web - Douglas Crockford'},
+                {name:'❓Rethinking Asynchronous JavaScript - Kyle Simpson'},
+                {name:'❓Asynchronous Programming in JavaScript (with Rx.js Observables) - Jafar Husain'},
+                {name:'🔒Hardcore Functional Programming in JavaScript - Brian Lonsdorf'},
+                {name:'🔒Advanced Asynchronous JavaScript - Jafar Husain'},
+                {name: '<h3>=== REACT ===</h3>'},
+                {name:'🔴💻React Official Tutorial'},
+                {name:'💻The Modern React 16 Developer Bootcamp - Andrew Mead'},
+                {name:'💻Complete Intro to React v3 (feat Redux)'},
+                {name:'❓Advanced React Patterns - Kent C. Dodds'},
+                {name:'❓Advanced State Management in React (feat. Redux and MobX) - Steve Kinney'},
+                {name:'❓Functional-Light Javascript V2 - Kyle Simpson'},
+                {name:'❓Testing React Applications - Kent C. Dodds'},
+                {name: '<h3>=== CSS ===</h3>'},
+                {name: '💻CSS Grids and Flexbox for Responsive Web Design'},
+                {name: '💻CSS In-Depth v2'},
+                {name: '❓Sass Fundamentals - Mike North'},
+                {name: '<h3>=== EXPERT ===</h3>'},
+                {name: '❓Four Semesters of Computer Science in 6 Hours PART 2'},
+                {name: '💻GIT In-Depth'},
+                {name: '❓Web Security - Mike North'},
+                {name: '💻Data Structures and Algorithms in JavaScript'},
+                {name: '❓Web Performance - Steve Kinney'},
+                {name: '❓Code Transformation and Linting with ASTs - Kent C. Dodds'},
+                {name: '❓Progressive Web Applications and Offline - Mike North'},
+                {name: '❓Testing JavaScript Applications (feat. React and Redux) - Kent C. Dodds'},
+                {name: '❓Advanced Vue.js Features from the Ground Up - Evan You'},
+                {name: '❓Mastering Chrome Web Developer Tools'},
+                {name:'💻The Modern Python Bootcamp'},
+                {name:'💻Blender 3d Animation Course'},
+            ]
+        }
+    })
+</script>
+    <style>
+        li{
+            list-style-type: none;
+        }
+        body {
+            font-family: 'Roboto Slab', serif;
+        }
+    </style>
+    </body>
+</html>
